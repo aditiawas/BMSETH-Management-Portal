@@ -1,0 +1,145 @@
+<?php
+session_start();
+if((!isset($_SESSION['wauth']))&&isset($_SESSION['sauth'])) {
+if(isset($_SESSION['sauth'])) {header("location:home1.php");}else{
+header("location:hostel_mess.html");}}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BMSETH | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="icon" href="bms.jfif" sizes="16x16">
+   <link rel="stylesheet" type="text/css" href="gen_style.css"/>
+</head>
+<!-- The scrollable area -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="home2.php"><b><font size="12pt">BMSET HOSTELS</font></b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="whome.php">HOME</a></li>
+        <li><a href="hostel_mess2.php">HOSTEL & MESS</a></li>
+        <li><a href="warden2.php">WARDENS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="logout.php">SIGN OUT
+        </li>
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="visibility:hidden;">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+	    <span style="display:inline-block;">
+			<img src="1.jpg" alt="Hostel2">
+	        <img src="3.jpg" alt="Hostel3">
+	        <img src="2.jpg" alt="Hostel2">
+		 
+		</span>
+        <div class="carousel-caption">
+          <h2 style="background-color:#e6f2ff; opacity:0.8;">Welcome to the BMSET Hostels website</h2>
+          <p style="background-color:#e6f2ff; color:black; font-size:20px; opacity:0.8;"><i>"A home away from home."</i></p>
+        </div>      
+      </div>
+      <div class="item">
+	  <span style="display:inline-block;">
+	    <img src="img3.png" alt="Hostel3">
+		<img src="5.jpg" alt="Hostel2">
+		<img src="6.jpg" alt="Hostel2">
+	  </span>
+      </div>
+      <div class="item" >
+	  <span style="display:inline-block;">
+	  	   <img src="img2.jpg" alt="Hostel3">
+           <img src="img1.jpg" alt="Hostel1">
+		   <img src="4.jpg" alt="Hostel2">
+      </span>   
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<div id="myPage"><br/><hr/><br/>
+<!-- Container -->
+<div id="about" class="container text-center"><br/>
+  <h3 style="font-size:25px; background-color:#004d80; color:white;line-height:150%;">About The Hostel</h3>
+  <blockquote style="text-align:justify;"><i>Best thing that happened these four years? Maybe hostel. It was a great experience, I loved it.<br/><br> - Ex-Hostelite</i></blockquote>
+  <p style="line-height:150%; font-size:20px; text-align:justify;">The BMS Education Trust (BMSET) is a prestigious institution which founded and manages the top class colleges viz., BMS College of Engineering (BMSCE) , BMS Institute of Technology & Management, BMS College of Law, BMS College for women and others institutions.  
+
+BMSET Hostels are part of BMSET and BMSET Hostels in the campus of BMS College of Engineering (BMSCE) provide accommodation to the students wishing to reside in the hostels. BMSET Hostels gives a distinct advantage of befriending with students from across the globe and expose them different religions, languages and customs of countries. Additionally, living as a community in the hostel will lead to all-round development of personality of a hostelite and will definitely go a long way in fostering world-class citizens.
+
+Hostels are independent units in respects to its internal administration under the overall supervision of council of wardens and the hostel management. The hostels are located in the southern side and adjacent to the college campus and have a separate hostel office and mess within the hostel premises. </p>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container"> <br/><hr/><br/>
+  <h3 class="text-center" style="font-size:25px;background-color:#004d80; color:white;line-height:150%;">Contact Us</h3>
+      <center>
+      <p style="line-height:150%; font-size:20px;"><span class="glyphicon glyphicon-map-marker"></span> Hanumanthanagar, Bengaluru</p>
+      <p style="line-height:150%; font-size:20px;"><span class="glyphicon glyphicon-phone"></span> Phone: 25534252</p>
+      <p style="line-height:150%; font-size:20px;"><span class="glyphicon glyphicon-envelope"></span> Email: bmshostels@gmail.com</p>
+      </center>
+</div>
+
+<!-- Add Google Maps -->
+<div id="find" class="container">
+  <h3 class="text-center" style="font-size:25px;">Find Us</h3>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<center>
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1156.0569161565263!2d77.56460633158905!3d12.940052028043256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBMS+Hostel%2C+Bull+Temple+Road%2C+Basavanagudi%2C+Bengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1506243206850" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</center>
+</div>
+</div>
+<script src="https://unpkg.com/sweetalert@2.0.8/dist/sweetalert.min.js"></script>
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p><button onclick='swal("A&E Web Developers", "Launched amidst the hustle & bustle of the engineering life, we aim to be the comprehensive solution to your online dream.", "info");' style="background-color:#2d2d30;border:collapse">Website developed by A&E Web Developers Inc.</button></p> 
+</footer>
+
+</body>
+</html>
